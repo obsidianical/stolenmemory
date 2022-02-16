@@ -4,7 +4,8 @@ header
 	h2 Help people find their lost ancestors
 #nav 
 	.navitem( v-for="p in peopleList" )
-		p {{ p.name }}
+		router-link( :to="`/people/${p.id}`" ) {{ p.name }}
+router-view
 </template>
 
 <script lang="ts" setup>

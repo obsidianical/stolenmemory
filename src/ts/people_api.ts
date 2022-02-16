@@ -1,4 +1,5 @@
 interface Person {
+  id: string;
   name: string;
   birthdate: string;
   nationality: string;
@@ -12,4 +13,12 @@ async function getPeople(): Promise<Person[]> {
   return people_raw;
 }
 
-export { getPeople, Person };
+async function fetchPersonMd(id: string): Promise<string> {
+  const md: string = await fetch(`people/${id}.md`)
+    .then((response) => response.text())
+    .then((data) => data);
+  console.log(md);
+  return md;
+}
+
+export { getPeople, Person, fetchPersonMd };
