@@ -1,22 +1,21 @@
 <template lang="pug">
 .person 
-	vue-markdown( :source="md")
+	vue-markdown( :source="currentPersonMd")
 </template>
 
 <script lang="ts" setup>
-import { onBeforeMount, ref, Ref } from "vue";
-import { useRoute, onBeforeRouteUpdate } from "vue-router";
+import { onBeforeMount, onBeforeUpdate, ref, Ref } from "vue";
+import { useRoute } from "vue-router";
 import VueMarkdown from "vue-markdown-render";
-import { fetchPersonMd } from "../ts/people_api";
+import { fetchPersonMd, currentPersonMd } from "../ts/people_api";
 
 const route = useRoute();
-const md: Ref<string> = ref("");
 
 onBeforeMount(async () => {
-  md.value = await fetchPersonMd(route.params.id as string);
+  await fetchPersonMd(route.params.id as string);
 });
-onBeforeRouteUpdate(async () => {
-  md.value = await fetchPersonMd(route.params.id as string);
+onBeforeUpdate(async () => {
+  await fetchPersonMd(route.params.id as string);
 });
 </script>
 

@@ -1,5 +1,6 @@
 <template lang="pug">
 header
+  LangPicker
   h1 
     a(
       href="https://arolsen-archives.org/en/learn-participate/initiatives-projects/stolenmemory/"
@@ -11,14 +12,18 @@ header
     h3 {{ langData["read-research"] }}
     .people-container
       .navitem(v-for="p in peopleList")
-        router-link(:to="`/people/${p.id}`") {{ p.name }}
+          router-link(:to="`/people/${p.id}`") {{ p.name }}
 router-view
+Footer
 </template>
 
 <script lang="ts" setup>
 import { ref, onBeforeMount } from "vue";
 import { getPeople, Person } from "./ts/people_api";
 import { langInit, langData } from "./ts/lang";
+
+import LangPicker from "./components/LangPicker.vue";
+import Footer from "./components/Footer.vue";
 
 let peopleList = ref<Person[]>();
 
@@ -46,6 +51,8 @@ html, body
     header
         background-color: $bg-sec
         padding: 75px
+        @media only screen and (min-width: 320px) and (max-width: 480px)
+            padding: 3rem 1rem
         text-align: center
         h1
             a
@@ -53,20 +60,31 @@ html, body
                 font-family: $header-font, sans-serif
                 color: $txt-pri
                 text-decoration: none
+                @media only screen and (min-width: 320px) and (max-width: 480px)
+                    font-size: 2rem
         h2
             font-size: 2rem
             color: $txt-sec
+            @media only screen and (min-width: 320px) and (max-width: 480px)
+                font-size: 1.5rem
         p
             font-family: $textbody-font
             color: $txt-sec
             width: 600px
             margin: 5rem auto
+            @media only screen and (min-width: 320px) and (max-width: 480px)
+                width: unset
+                margin: 6rem 0
+                text-align: left
         .request
             font-size: 1.25rem
         .notice
             color: $txt-active-nav
             font-size: 0.8rem
             width: 500px
+            @media only screen and (min-width: 320px) and (max-width: 480px)
+                width: unset
+                margin: 13rem 0 5rem 0
         #nav
             margin-top: 6rem
             h3
@@ -77,6 +95,7 @@ html, body
             .people-container
                 display: flex
                 justify-content: center
+                flex-wrap: wrap
                 .navitem
                     margin: 0.75rem
                     a
@@ -96,6 +115,11 @@ html, body
             font-family: $textbody-font
             font-size: 1.1rem
             margin-top: 2rem
+        @media only screen and (min-width: 320px) and (max-width: 480px)
+            width: unset
+            margin: 3.5rem 1.5rem
+            img
+                width: 100%
 
 a
     color: $txt-link

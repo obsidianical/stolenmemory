@@ -1,4 +1,8 @@
+import { Ref, ref } from "vue";
 import { language } from "./lang";
+
+const currentPerson: Ref<string> = ref("");
+const currentPersonMd: Ref<string> = ref("");
 
 interface Person {
   id: string;
@@ -16,12 +20,11 @@ async function getPeople(): Promise<Person[]> {
   return r;
 }
 
-async function fetchPersonMd(id: string): Promise<string> {
-  const r: string = await fetch(`ppl/${language.value}/${id}.md`)
+async function fetchPersonMd(id: string): Promise<void> {
+  currentPerson.value = id;
+  currentPersonMd.value = await fetch(`ppl/${language.value}/${id}.md`)
     .then((res) => res.text())
     .then((dat) => dat);
-
-  return r;
 }
 
-export { getPeople, Person, fetchPersonMd };
+export { getPeople, Person, fetchPersonMd, currentPersonMd, currentPerson };
