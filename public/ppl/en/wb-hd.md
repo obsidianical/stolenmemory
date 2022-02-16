@@ -4,13 +4,13 @@ This information is incomplete, please contact us for corrections or further inf
 
 ## Personal data
 
-Birth date: 11/02/1890
-Birthplace: Berlin
-Nationality: Deutsch
-Job: Dentist
+Birth date: 11/02/1890 \
+Birthplace: Berlin \
+Nationality: Deutsch \
+Job: Dentist \
 Religion: Catholic
 
-Mother: Martha Hausdorf
+Mother: Martha Hausdorf \
 Father: Robert Hausdorf
 
 Brother: Hans Hausdorf
@@ -19,7 +19,7 @@ Brother: Hans Hausdorf
 
 Prisoner numbers: 1407, 5599, 111494
 
-Reason for arrest: Scam
-Was in: KZ Buchenwald
-prisoner number in KZ Buchenwald: 5599
+Reason for arrest: Scam \
+Was in: KZ Buchenwald \
+prisoner number in KZ Buchenwald: 5599 \
 Time spent there: 02/01/1940 -> 02/05/1942

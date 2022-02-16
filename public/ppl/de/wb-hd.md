@@ -4,13 +4,13 @@ Diese Daten sind unvollständig, für Korrekturen oder weitere Informationen bit
 
 ## Persönliche Daten
 
-Geboren: 11.02.1890
-Geburtsort: Berlin
-Nationalität: Deutsch
-Beruf: Zahnarzt
+Geboren: 11.02.1890 \
+Geburtsort: Berlin \
+Nationalität: Deutsch \
+Beruf: Zahnarzt \
 Religion: Katholisch
 
-Mutter: Martha Hausdorf
+Mutter: Martha Hausdorf \
 Vater: Robert Hausdorf
 
 Brüder: Hans Hausdorf
@@ -19,9 +19,9 @@ Brüder: Hans Hausdorf
 
 Häftlingsnummern: 1407, 5599, 111494
 
-Festnahmegrund: Betrug
-War in: KZ Buchenwald 
-mit Häftlingsnummer: 5599
+Festnahmegrund: Betrug \
+War in: KZ Buchenwald  \
+mit Häftlingsnummer: 5599 \
 Zeit im KZ Buchenwald: 02.01/1940 -> 02.05.1942
 
 

@@ -4,8 +4,8 @@ This information is incomplete, please contact us for corrections or further inf
 
 ## Personal information
 
-Birth date: 14.04.1892
-Birthplace: Kluczbork
+Birth date: 14.04.1892 \
+Birthplace: Kluczbork \
 Nationality: Polnisch
 
 ## Prison time

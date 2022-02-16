@@ -1,3 +1,5 @@
+import { language } from "./lang";
+
 interface Person {
   id: string;
   name: string;
@@ -7,18 +9,19 @@ interface Person {
 }
 
 async function getPeople(): Promise<Person[]> {
-  const people_raw: Person[] = await fetch("people.json")
-    .then((response) => response.json())
-    .then((data) => data);
-  return people_raw;
+  const r: Person[] = await fetch("people.json")
+    .then((res) => res.json())
+    .then((dat) => dat);
+
+  return r;
 }
 
 async function fetchPersonMd(id: string): Promise<string> {
-  const md: string = await fetch(`people/${id}.md`)
-    .then((response) => response.text())
-    .then((data) => data);
-  console.log(md);
-  return md;
+  const r: string = await fetch(`ppl/${language.value}/${id}.md`)
+    .then((res) => res.text())
+    .then((dat) => dat);
+
+  return r;
 }
 
 export { getPeople, Person, fetchPersonMd };

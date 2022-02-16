@@ -4,8 +4,8 @@ Diese Daten sind unvollständig, für Korrekturen oder zusatzinformationen bitte
 
 ## Persönliche Daten
 
-Geboren: 14.04.1892
-Geburtsort: Kluczbork
+Geboren: 14.04.1892 \
+Geburtsort: Kluczbork \
 Nationalität: Polnisch
 
 ## Haftzeit
