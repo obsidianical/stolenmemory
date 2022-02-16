@@ -1,0 +1,14 @@
+[
+	{
+		"name": "example",
+		"birthdate": "16/02/2022",
+		"nationality": "german",
+		"prisoner_nrs": [158, 583828]
+	},
+	{
+		"name": "sample_person",
+		"birthdate": "12/01/2020",
+		"nationality": "polish",
+		"prisoner_nrs": [583, 5278, 38228]
+	}
+]
