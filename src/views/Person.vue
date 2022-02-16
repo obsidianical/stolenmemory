@@ -4,16 +4,19 @@
 </template>
 
 <script lang="ts" setup>
-import { onBeforeUpdate, ref } from "vue";
-import { useRoute } from "vue-router";
+import { onBeforeMount, ref, Ref } from "vue";
+import { useRoute, onBeforeRouteUpdate } from "vue-router";
 import VueMarkdown from "vue-markdown-render";
-import { fetchPersonMd } from "../ts/people_api.ts";
+import { fetchPersonMd } from "../ts/people_api";
 
 const route = useRoute();
-const md: ref<string> = ref("");
+const md: Ref<string> = ref("");
 
-onBeforeUpdate(async () => {
-  md.value = await fetchPersonMd(route.params.id);
+onBeforeMount(async () => {
+  md.value = await fetchPersonMd(route.params.id as string);
+});
+onBeforeRouteUpdate(async () => {
+  md.value = await fetchPersonMd(route.params.id as string);
 });
 </script>
 

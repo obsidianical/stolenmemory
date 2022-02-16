@@ -1,16 +1,16 @@
 [
 	{
-		"id": "example",
-		"name": "Example",
-		"birthdate": "16/02/2022",
-		"nationality": "german",
-		"prisoner_nrs": [158, 583828]
+		"id": "wb-hd",
+		"name": "Willibald Hausdorf",
+		"birthdate": "11/02/1890",
+		"nationality": "German",
+		"prisoner_nrs": [1407, 5599, 111494]
 	},
 	{
-		"id": "sample_person",
-		"name": "Sample Person",
-		"birthdate": "12/01/2020",
-		"nationality": "polish",
-		"prisoner_nrs": [583, 5278, 38228]
+		"id": "sw-ts",
+		"name": "Stanislaw Tszeins",
+		"birthdate": "14/04/1892",
+		"nationality": "Polish",
+		"prisoner_nrs": [47305]
 	}
 ]
