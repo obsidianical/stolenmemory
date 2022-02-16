@@ -25,7 +25,7 @@ footer
 
 footer
     background-color: $bg-sec
-    padding: 1.5rem
+    padding: 1.5rem 0
     display: grid
     grid-template-columns: 1fr 1fr 1fr
     .col
@@ -47,7 +47,11 @@ footer
             color: $txt-link-visited
     @media only screen and (min-width: 320px) and (max-width: 480px)
         grid-template-columns: 1fr
-        margin: 1.5rem
         hr
             display: block
+            border: 1px solid $txt-muted
+            width: 75%
+            border-radius: 2px
+        .col
+            margin: 1.5
 </style>
