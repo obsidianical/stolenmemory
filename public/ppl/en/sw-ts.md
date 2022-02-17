@@ -6,7 +6,7 @@ This information is incomplete, please contact us for corrections or further inf
 
 Birth date: 14.04.1892 \
 Birthplace: Kluczbork \
-Nationality: Polnisch
+Nationality: Polisch
 
 ## Prison time
 

@@ -22,7 +22,7 @@ function isNotEnglish(lang: string | Language): boolean {
 
 export const language: Ref<Language> = ref("en");
 export const langData: Ref<LanguageData> = ref({
-  "sub-heading": "Help people find their lost ancestors",
+  "sub-heading": "Help people find their lost relatives",
   "meta-description":
     "This is a site developed by students for the #StolenMemory project to have all the info at one place and to make looking for the people easier.",
   request:

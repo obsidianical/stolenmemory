@@ -8,7 +8,7 @@ This information is incomplete, please contact us for corrections or further inf
 
 Birth date: 11/02/1890 \
 Birthplace: Berlin \
-Nationality: Deutsch \
+Nationality: German \
 Job: Dentist \
 Religion: Catholic
 
